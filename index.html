@@ -3,14 +3,14 @@
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
- <a-scene embedded arjs>
+  <a-scene embedded arjs=’sourceType: webcam;’>
       <a-marker preset="hiro">
         <a-assets>
           <a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>
           <a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>
        </a-assets>
      </a-marker>   
-  <a-entity camera; obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+  <a-entity camera obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
 </a-scene>
     
   </body>
